@@ -1,1 +1,1 @@
-export { GreetingElement } from './tags/greeting';
+export { GreetingElement } from './elements/greeting';
