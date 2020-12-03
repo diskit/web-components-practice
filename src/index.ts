@@ -1,1 +1,0 @@
-export { GreetingElement } from './elements/greeting';
