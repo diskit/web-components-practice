@@ -4,8 +4,6 @@ export class GreetingElement extends HTMLElement {
     const element = document.createElement('div');
     element.textContent = this.getAttribute('message');
     this.appendChild(element);
-
-    this.innerHTML = "aaaa";
   }
 
   static get observedAttributes() {
@@ -30,3 +28,12 @@ export class GreetingElement extends HTMLElement {
 }
 
 customElements.define('x-greeting', GreetingElement);
+
+export class ExtendedDiv extends HTMLDivElement {
+  constructor() {
+    super();
+    this.innerHTML = '拡張したdiv';
+  }
+}
+
+customElements.define('x-div', ExtendedDiv, { extends: "div" });

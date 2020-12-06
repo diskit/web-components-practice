@@ -6,12 +6,9 @@ module.exports = {
   },
   plugins: [
     '@snowpack/plugin-typescript',
+    '@snowpack/plugin-sass'
   ],
   
-  plugins: [
-    ['@snowpack/plugin-sass', { /* see options below */ }]
-  ],
-
   install: [
     /* ... */
   ],

@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
 html, body {
-  margin: 0;
+  margin: 10px;
+}
+
+x-greeting div {
+  color: #f00;
 }
