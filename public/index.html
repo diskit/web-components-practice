@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web site created using create-snowpack-app" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>WebComponens</title>
+    <title>WebComponens</title>  
   </head>
   <body>
-    <x-greeting message="hello"></x-greeting>
+    <template id="greeting-template">
+      <div>Hello!</div>
+      <slot name="name">default name</slot>
+    </template>
+    <x-greeting message="hello"><div slot="name">disk</div></x-greeting>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="/_dist_/index.js"></script>
   </body>

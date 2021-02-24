@@ -1,11 +1,9 @@
 export class GreetingElement extends HTMLElement {
   constructor() {
     super();
-    const element = document.createElement('div');
-    element.textContent = this.getAttribute('message');
+    const template = document.querySelector('#greeting-template') as HTMLTemplateElement;
     const shadowRoot = this.attachShadow({mode: "open"});
-    this.appendChild(element);
-    shadowRoot.appendChild(element);
+    shadowRoot.appendChild(template.content.cloneNode(true));
   }
 }
 
