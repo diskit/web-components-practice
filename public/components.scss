@@ -1,5 +1,5 @@
 @charset 'UTF-8';
 
-div {
+:host {
   color: var(--text-color, #f00);
 }

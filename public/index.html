@@ -9,14 +9,7 @@
     <title>WebComponens</title>  
   </head>
   <body>
-    <template id="greeting-template">
-      <style>
-        @import "/components.css";
-      </style>
-      <div>Hello!</div>
-      <slot name="name">default name</slot>
-    </template>
-    <x-greeting message="hello"><div slot="name">disk</div></x-greeting>
+    <x-greeting message="hello"><div slot="name">hoge!</div></x-greeting>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="/_dist_/index.js"></script>
   </body>
